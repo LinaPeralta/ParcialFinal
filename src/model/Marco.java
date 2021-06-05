@@ -5,12 +5,12 @@ import processing.core.PApplet;
 public class Marco {
 	
 	
-	private int x,y;
-	private int tam = 50;
+	private float x,y;
+	private  final float tam = 50;
 	private PApplet app;
 	
 	
-	public Marco(int x,int y,int tam) {
+	public Marco(float x,float y,PApplet app) {
 		this.x = x;
 		this.y = y;
 		this.app = app;
@@ -21,4 +21,9 @@ public class Marco {
 		app.ellipse(x, y, tam, tam);
 		
 	}
+
+
+
+	
+	
 }
